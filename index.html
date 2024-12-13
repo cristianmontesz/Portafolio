@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Bienvenidos a mi portafolio</h1>
+            <img src="foto.jpeg" alt="Foto de perfil" class="foto-perfil">
+            <nav>
+                <ul>
+                    <li><a href="#Sobre-mi">Sobre mí</a></li>
+                    <li><a href="#Proyectos">Proyectos</a></li>
+                    <li><a href="#Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <select id="theme-selector">
+                <option value="minimal">Minimalista</option>
+                <option value="retro">Retro</option>
+                <option value="moderno">Moderno</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section id="Sobre-mi" class="section">
+            <div class="container">
+                <img src="personal.jpg" alt="Sobre mí" class="container-img">
+                <div class="text-content">
+                    <h2>Sobre mí</h2>
+                    <p>Soy un diseñador especializado en front-end y back-end. Me apasiona crear experiencias digitales interactivas y eficaces.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Proyectos" class="section">
+            <h2>Proyectos</h2>
+            <div class="project-container">
+                <div class="project-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                    <img src="CRUD.jpg" alt="CRUD" class="project-img">
+                    <h3>CRUD - Sistema de Gestión</h3>
+                    <p class="project-description">Desarrollé una aplicación de CRUD utilizando tecnologías modernas como React y Node.js.</p>
+                </div>
+                <div class="project-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                    <img src="python.jpg" alt="Otro Proyecto" class="project-img">
+                    <h3>Framework Reflex</h3>
+                    <p class="project-description">Desarrolle una aplicacion con el framework reflex con solo codigo python haciendo un curso basico para aprender python. </p>
+                </div>
+                <div class="project-card" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                    <img src="reflex.jpg" alt="Framework Reflex" class="project-img">
+                    <h3>Proyectos futuros</h3>
+                    <p class="project-description">Este es otro proyecto donde utilicé herramientas como Angular y MongoDB.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contacto" class="section">
+            <div class="container">
+                <img src="contacto.jpg" alt="Contacto" class="container-img">
+                <div class="text-content">
+                    <h2>Contacto</h2>
+                    <p>Celular: 3203913442</p>
+                    <p>Email: Montestapiero0127@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Todos los derechos reservados. | <a href="#">Términos y condiciones</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

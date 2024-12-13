@@ -1,0 +1,196 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+
+body.minimal {
+    background-color: #0cd123;
+    color: #27e70e;
+}
+
+body.retro {
+    background-color: #3707ba;
+    color: #0817c0;
+}
+
+body.moderno {
+    background-color: #333;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    background-image: url(body.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-position: top left;
+    height: auto;
+    width: 100%;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 2.5rem;
+}
+
+.foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+select {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+select:hover {
+    background-color: #a04545;
+}
+
+main {
+    padding: 40px;
+    background-color: #bfbfc2cf;
+    margin-top: 30px;
+}
+
+/* Secciones y contenedores */
+.section {
+    margin-bottom: 40px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.container-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+    background-size: 50%50%;
+}
+
+.text-content {
+    flex: 1;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.project-container {
+    display: flex;
+    gap: 30px; /* Aumentar el espacio entre los cuadros */
+    justify-content: space-between;
+    flex-wrap: wrap; /* Asegura que los proyectos se ajusten en pantallas más pequeñas */
+}
+
+.project-card {
+    background-color: #f9f9f9;
+    padding: 30px; /* Aumentar el relleno para hacer el cuadro más grande */
+    width: 48%; /* Hacer los cuadros más grandes, ahora ocupan un poco menos de la mitad del contenedor */
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombras más grandes para dar un efecto de profundidad */
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease; 
+}
+
+.project-img {
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho del cuadro */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 8px; /* Bordes redondeados en las imágenes */
+    margin-bottom: 20px; /* Separar la imagen del texto */
+}
+
+@media (min-width: 1024px) {
+    .project-card {
+        width: 30%; /* En pantallas grandes, cada cuadro ocupará el 30% del contenedor */
+    }}
+
+.project-card:hover {
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño del cuadro al pasar el mouse */
+    }
+
+.project-description {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.project-card:hover .project-description {
+    display: block;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
